@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  rainbow-bridge-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rainbow-bridge-frontend:latest
+    container_name: rainbow-bridge-frontend
+    command: npm run start_bsc
+    ports:
+      - 127.0.0.1:3200:2222
+    restart: always
