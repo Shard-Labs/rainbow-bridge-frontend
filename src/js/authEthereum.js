@@ -34,10 +34,8 @@ window.web3Modal = new Web3Modal({
 async function login () {
   const provider = await window.web3Modal.connect()
   window.provider = provider
-  setEthProvider(new ethers.providers.InfuraProvider(
-    process.env.ethNetworkId === 'main' ? 'mainnet' : process.env.ethNetworkId,
-    process.env.INFURA_ID
-  ))
+  setEthProvider(new ethers.providers.JsonRpcProvider('https://data-seed-prebsc-1-s1.binance.org:8545/'))
+
   setSignerProvider(new ethers.providers.Web3Provider(provider, 'any'))
 
   if (provider.isMetaMask || provider.isImToken) {

@@ -406,7 +406,7 @@ li {
 }
 .account-with-icon.ethereum:after {
   content: "on Ethereum";
-  background-image: url(/img/ethereum.svg);
+  background-image: url(/img/binance.svg);
 }
 .account-with-icon.near:after {
   content: "on NEAR";

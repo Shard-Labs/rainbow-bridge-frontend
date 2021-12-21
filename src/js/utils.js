@@ -88,7 +88,7 @@ export async function getEthData () {
     allowance: '-1',
     decimals: 18,
     name: 'ETH',
-    icon: 'ethereum.svg',
+    icon: 'binance.svg',
     nep141: {
       address: process.env.auroraEvmAccount,
       balance: ethOnNearBalance,
@@ -134,5 +134,6 @@ export const chainIdToEthNetwork = {
   1: 'main',
   3: 'ropsten',
   4: 'rinkeby',
-  5: 'goerli'
+  5: 'goerli',
+  97: 'bsc'
 }

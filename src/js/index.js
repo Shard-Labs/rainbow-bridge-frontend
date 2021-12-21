@@ -32,6 +32,8 @@ switch (`${process.env.ethNetworkId}-${process.env.nearNetworkId}`) {
   case 'rinkeby-testnet': window.bridgeName = 'Rinkeby ↔︎ NEAR Testnet'; break
   case 'goerli-testnet': window.bridgeName = 'Goerli ↔︎ NEAR Testnet'; break
   case 'main-mainnet': window.bridgeName = 'Ethereum ↔︎ NEAR'; break
+  case 'bsc-testnet': window.bridgeName = 'BSC Testnet ↔︎ NEAR'; break
+  case 'bsc-mainnet': window.bridgeName = 'BSC ↔︎ NEAR'; break
   default: window.bridgeName = 'Unknown'
 }
 
@@ -60,7 +62,6 @@ transfers.setBridgeParams({
 
 window.addEventListener('load', () => {
   const params = Object.keys(window.urlParams.get())
-  console.log(params)
   // When redirecting from NEAR wallet, stay on the landing page
   if (params.includes('withdrawing') || params.includes('locking')) {
     window.urlParams.clear('erc20n')

@@ -10,7 +10,7 @@
   </label>
   <div class="authenticated-account__details">
     <img
-      src="img/ethereum.svg"
+      src="img/binance.svg"
       alt=""
       class="network-indicator network--ethereum"
     />
@@ -159,12 +159,12 @@
         // Record current swap direction to be the same after NEAR wallet login redirect.
         const settings = JSON.parse(window.localStorage.getItem("rainbow-bridge-settings"))
         if (from.childNodes[3].childNodes[5].id === "authEthereum") {
-          window.localStorage.setItem("rainbow-bridge-settings", JSON.stringify({ ...settings, direction: "eth-to-near"}))
+          window.localStorage.setItem("rainbow-bridge-settings", JSON.stringify({ ...settings, direction: "bsc-to-near"}))
           window.dom.findAll("transferFrom").forEach((input) => {
             input.name = "erc20";
           });
         } else {
-          window.localStorage.setItem("rainbow-bridge-settings", JSON.stringify({ ...settings, direction: "near-to-eth"}))
+          window.localStorage.setItem("rainbow-bridge-settings", JSON.stringify({ ...settings, direction: "near-to-bsc"}))
           window.dom.findAll("transferFrom").forEach((input) => {
             input.name = "erc20n";
           });
@@ -172,7 +172,7 @@
       });
       const swaps = window.dom.findAll("swapAccounts");
       const settings = JSON.parse(window.localStorage.getItem("rainbow-bridge-settings"))
-      if (settings?.direction === "near-to-eth") {
+      if (settings?.direction === "near-to-bsc") {
         swaps.map(swap => swap.click())
       }
 
