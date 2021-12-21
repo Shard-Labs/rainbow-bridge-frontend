@@ -163,5 +163,44 @@ module.exports = {
     ethChainId: 1,
     ethAutoSyncFromBlock: 12272165, // ethClientAddress contract creation block: https://etherscan.io/tx/0xe5a568aaec37f9a201b54ebfc3f38883237ebc12fad94ea41663fcc13093abbd
     nearAutoSyncFromBlock: '1615737600000000000' // nearClientAccount contract creation time (rounded * 10^9 (nanosec)): https://explorer.near.org/transactions/DEfAyk1tydsb5rpGo13QoVsJoyg7hZmwccv41LzAYQCo
-  }
+  },
+  "bsc_development": {
+    ethClientAddress: '0x700d525680fd1bc3db71aa1cf2f26dc8cb124594',
+    ethNearOnEthClientAbiText: readFileSync('./abi/nearOnEthClient.abi'),
+    ethErc20AbiText: readFileSync('./abi/erc20.abi'),
+    ethLockerAbiText: readFileSync('./abi/ERC20Locker.full.abi'),
+    ethLockerAddress: '0xe9b21a1010eb2dd749d7a596426b5b6d499ae64e',
+    ethProverAddress: '0xa4a66f7a4d33fc0e0b97b9174a34ff09ba202eef',
+    ethAdminAddress: '0x671b02F1853218906648850b8638512413D13dE7',
+    nearClientAccount: 'rb-cli.testnet',
+    nearTokenFactoryAccount: 'rb-factory0.testnet',
+    eNEARAbiText: readFileSync('./abi/eNEAR.abi'),
+    etherCustodianAbiText: readFileSync('./abi/etherCustodian.full.abi'),
+    auroraEvmAccount: 'aurora',
+    auroraRelayerAccount: 'relay.aurora',
+    nearHelperUrl: 'https://helper.testnet.near.org',
+    
+    nativeNEARLockerAddress: 'rb-e-near.testnet',
+
+    nearEventRelayerMargin: 10,
+    sendToEthereumSyncInterval: 60000,  // 60sec
+    sendToNearSyncInterval: 20000,  // 20sec
+    maxFindEthProofInterval: 600000,  // 600sec / 10min
+    
+    // frontend settings
+    featuredErc20s: JSON.stringify([
+      '0x64544969ed7ebf5f083679233325356ebe738930', //   USDC
+      '0x232fdd286b49aa63a0be21838a5a92267e56f22e', //   NEAR
+    ]),
+    nearNodeUrl: 'https://rpc.testnet.near.org/',
+    nearWalletUrl: 'https://wallet.testnet.near.org',
+    nearExplorerUrl: 'https://explorer.testnet.near.org',
+
+    nearNetworkId: 'testnet',
+    ethNetworkId: 'bsc',
+    ethChainId: 97,
+
+
+    eNEARAddress: '0x2ccA34A8063917E30deb611dB1d9240f9908f556',
+  },
 }
