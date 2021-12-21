@@ -1,9 +1,11 @@
 <nav class="site-nav">
   <div class="site-nav__wrapper">
-    <a class="navLogo" data-behavior="navLogo" href="/index.html" title="Home"
-      >Home<span class="beta-tag">Beta</span></a
-    >
-
+    <div>
+      <a class="navLogo" data-behavior="navLogo" href="/index.html" title="Home"
+        >Home<span class="beta-tag">Beta</span>
+      </a>
+      <a class="poweredBy" href="https://www.shardlabs.io">Powered by <strong>Shard Labs</strong><span class="shardlabsLogo"></span></a>
+    </div
     <div data-behavior="bridgesDropdown" class="bridges-nav">
       <div
         id="bridge-dropdown"
@@ -76,6 +78,7 @@
   .site-nav__wrapper {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   .site-nav {
@@ -95,7 +98,7 @@
   .navLogo {
     background: url(/img/rainbow-bridge.svg) no-repeat;
     height: 32px;
-    width: 51px;
+    width: 100px;
     display: block;
     margin-right: var(--spacing-xxl);
     text-indent: -999px;
@@ -110,6 +113,31 @@
     text-indent: 0;
     transform: translateY(-50%);
   }
+
+  .poweredBy {
+    color: #000;
+    text-decoration: none;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    text-indent: 0;
+    color: #000;
+    font-size: 14px;
+    white-space: nowrap;
+    
+  }
+  .poweredBy .shardlabsLogo{ 
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 50%;
+    margin-left:5px;
+    transform: translateY(50%);
+    background: url(/img/shardlabs-logo.svg) no-repeat;
+    background-size: contain;
+    display: inline-block;
+  }
+
 
   .dropdown {
     font-size: var(--fs-micro);
@@ -175,6 +203,10 @@
   .dropdown-list__item .arrow-divider {
     color: var(--gray-500);
     padding: 0 var(--spacing-s);
+  }
+
+  .bridge-dropdown {
+    margin-left: var(--spacing-xl);
   }
 
   .bridge-dropdown .dropdown-list__item {
@@ -284,18 +316,16 @@
     let testnetOrMainnetUrl
     let testnetOrMainnet
     if (process.env.nearNetworkId === 'mainnet') {
-      bridgeName = `Ethereum <span class="arrow-divider">↔︎</span> NEAR`
-      auroraBridgeName = `Aurora <span class="arrow-divider">↔︎</span> NEAR`
-      url = 'https://ethereum.bridgetonear.org'
-      auroraUrl = 'https://aurora.bridgetonear.org'
+      bridgeName = `BSC <span class="arrow-divider">↔︎</span> NEAR`
+      url = 'https://dragonbridge.app'
+      testnetOrMainnetName = `BSC Testnet<span class="arrow-divider">↔︎</span> NEAR Testnet`
       testnetOrMainnetUrl = 'https://goerli.bridgetonear.org'
       testnetOrMainnet = 'testnet'
     } else {
-      bridgeName = `Goerli <span class="arrow-divider">↔︎</span> NEAR Tesnet`
-      auroraBridgeName = `Aurora Testnet <span class="arrow-divider">↔︎</span> NEAR Testnet`
-      url = 'https://goerli.bridgetonear.org'
-      auroraUrl = 'https://aurora-testnet.bridgetonear.org'
-      testnetOrMainnetUrl = 'https://ethereum.bridgetonear.org'
+      bridgeName = `BSC Testnet <span class="arrow-divider">↔︎</span> NEAR Tesnet`
+      url = 'https://testnet.dragonbridge.app'
+      testnetOrMainnetName = `BSC <span class="arrow-divider">↔︎</span> NEAR`
+      testnetOrMainnetUrl = 'https://dragonbridge.app'
       testnetOrMainnet = 'mainnet'
     }
     window.dom.fill("dropdownList").with(
@@ -314,18 +344,15 @@
           <button
             aria-controls="bridge-dropdown"
             class="dropdown-list__item"
-            onclick="location.href='${auroraUrl}';"
+            onclick="location.href='${testnetOrMainnetUrl}';"
           >
             <span class="bridge-indicator" style="background-color: var(--aurora-green)">
               <span class="visually-hidden">Connected</span>
             </span>
             <span>
-              ${auroraBridgeName}
+              ${testnetOrMainnetName}
             </span>
           </button>
-        <div class="testnet-options">
-          <a href=${testnetOrMainnetUrl}>Looking for the ${testnetOrMainnet} bridge?</a>
-        </div>
       `
     )
   });
