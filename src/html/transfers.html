@@ -572,6 +572,14 @@
 
     function renderTransfer(transfer, { inProgress }) {
       transfer = window.transfers.decorate(transfer, { locale: "en_US" });
+      transfer.steps.forEach(el => {
+        if(el.key === "sync-bridged-nep141-to-erc20") {
+          el.description = "Confirm in BSC. This can take around 1 hour. Feel free to return to this window later, to complete the final step of the transfer."
+        }
+        if(el.key === "unlock-bridged-nep141-to-erc20") {
+          el.description = "Deposit 10 NEAR in BSC"
+        }
+      });
       return `
     <div
       class="transfer ${transfer.status}"
