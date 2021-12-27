@@ -29,7 +29,7 @@
       // Disable scroll until correct eth network selected
       document.body.style.overflow = "hidden";
       window.dom.fill("modalMessage").with({
-        innerHTML: `The ${window.bridgeName} bridge requires an Ethereum wallet connected to
+        innerHTML: `The ${window.bridgeName} bridge requires an BSC wallet connected to
           ${process.env.ethNetworkId === 'main' ? 'mainnet' : process.env.ethNetworkId}.`,
       });
       window.dom.show("unsupportedNetworkModal");

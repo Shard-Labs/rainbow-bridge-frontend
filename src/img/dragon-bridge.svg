@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 154 101.19"
+   version="1.1"
+   id="svg36"
+   sodipodi:docname="logo-croped.svg"
+   width="154"
+   height="101.19"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata40">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>logo-1.1</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1055"
+     id="namedview38"
+     showgrid="false"
+     inkscape:zoom="0.66628321"
+     inkscape:cx="30.767697"
+     inkscape:cy="50.614999"
+     inkscape:window-x="3840"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_2" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#fff;}.cls-2{fill:#24c2d3;}</style>
+  </defs>
+  <title
+     id="title6">logo-1.1</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2">
+    <path
+       style="fill:#24c2d3"
+       class="cls-2"
+       d="m 154,16 v 0 A 55.8,55.8 0 0 1 152,3.7 h -10 c 0,1.44 0.15,2.9 0.31,4.38 A 66.18,66.18 0 0 0 118.56,0 L 117,9.9 c 1.31,0.21 3.81,0.83 5.17,1.16 a 36.56,36.56 0 0 0 -7,3.57 C 104.73,21.41 96.57,34.91 100,50.75 A 47.13,47.13 0 0 1 83.83,15.2 V 10 H 0 v 0.19 a 58.38,58.38 0 0 0 2.08,10.07 v 0.13 H 73.7 a 56.85,56.85 0 0 0 1,6.59 H 4.52 l 0.11,0.25 a 63.23,63.23 0 0 0 5.54,10.05 l 0.06,0.08 H 78 A 57.52,57.52 0 0 0 81.38,44 h -66 l 0.26,0.29 a 73.44,73.44 0 0 0 11,10 h 0.05 62.64 a 56.46,56.46 0 0 0 7.7,6.6 H 37.12 l 0.63,0.32 A 93.45,93.45 0 0 0 71.62,71 112.61,112.61 0 0 0 24.46,101.19 h 15.92 a 98.22,98.22 0 0 1 66.31,-24.4 h 19.46 a 91.5,91.5 0 0 1 -6.53,24.36 h 11.88 a 106.68,106.68 0 0 0 6.44,-34.59 q 0.06,-2.78 0,-5.58 h -11 a 104.92,104.92 0 0 1 -0.3,11.39 56.5,56.5 0 0 1 -11.1,-11.37 37,37 0 0 1 -4.87,-9.25 c -4.6,-13.4 2.47,-23.84 9.92,-28.7 7,-4.56 17.51,-6.55 27,0.72 0.95,0.8 2.71,2.47 2.71,2.47 L 154,16.1 v 0 c 0,0 0,0 0,0 z"
+       id="path32"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
